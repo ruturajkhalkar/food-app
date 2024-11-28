@@ -19,6 +19,8 @@ const useModel = require("../model/useModel");
     //         message: "User alredy Present",
     //       })
     // }
+
+    // g
     const user = await useModel.create({
         userName,
         email,
