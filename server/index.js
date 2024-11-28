@@ -7,6 +7,7 @@ dotenv.config();
 
 const testRoutes = require('./routes/testRouter'); // Import routes
 const authRoute = require('./routes/authRouter'); // Import routes
+const loginRouter = require('./routes/authRouter')
 
 
 
@@ -25,6 +26,8 @@ app.use(morgan("dev"));
 // Route
 app.use("/api/v1/test", testRoutes);
 app.use("/api/v1/auth", authRoute);
+app.use("/api/v1/auth", loginRouter);
+
 
 
 // Start the server
